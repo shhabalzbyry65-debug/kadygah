@@ -1,0 +1,1270 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#f5f2ec">
+<meta name="description" content="خديجة أحمد — معرض أعمال إبداعي وتصميم تجارب رقمية احترافية">
+<title>خديجة أحمد | معرض الأعمال</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300;400;500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+:root{
+--bg:#f5f2ec;
+--surface:#eae6dd;
+--dark:#242820;
+--olive:#777b60;
+--gold:#b89b69;
+--text:#303129;
+--muted:#858477;
+--line:#ded9ce;
+--white:#fffdf8;
+}
+
+*{margin:0;padding:0;box-sizing:border-box}
+
+html{scroll-behavior:smooth;scroll-padding-top:90px}
+
+body{
+background:var(--bg);
+color:var(--text);
+font-family:'IBM Plex Sans Arabic',sans-serif;
+overflow-x:hidden;
+}
+
+a{text-decoration:none;color:inherit}
+button{font:inherit}
+
+.container{
+width:min(1180px,90%);
+margin:auto;
+}
+
+::selection{
+background:var(--olive);
+color:white;
+}
+
+/* HEADER */
+
+header{
+height:88px;
+display:flex;
+align-items:center;
+justify-content:space-between;
+width:90%;
+max-width:1300px;
+margin:auto;
+border-bottom:1px solid var(--line);
+position:relative;
+z-index:100;
+}
+
+.logo{
+display:flex;
+align-items:center;
+gap:12px;
+direction:ltr;
+}
+
+.logo-symbol{
+width:42px;
+height:42px;
+border:1px solid var(--dark);
+border-radius:50%;
+display:grid;
+place-items:center;
+font:25px Georgia;
+}
+
+.logo-symbol span{color:var(--gold)}
+
+.logo-text{
+font:600 12px 'DM Sans';
+letter-spacing:2px;
+}
+
+.logo-text span{color:var(--olive)}
+
+nav{
+display:flex;
+align-items:center;
+gap:35px;
+}
+
+nav a{
+font-size:13px;
+color:#77776e;
+transition:.3s;
+}
+
+nav a:hover{color:var(--gold)}
+
+.nav-contact{
+background:var(--dark);
+color:white;
+padding:13px 22px;
+}
+
+.menu-btn{
+display:none;
+background:none;
+border:0;
+font-size:26px;
+cursor:pointer;
+}
+
+/* HERO */
+
+.hero{
+min-height:680px;
+display:grid;
+grid-template-columns:1fr 1fr;
+align-items:center;
+gap:65px;
+padding-top:65px;
+padding-bottom:90px;
+}
+
+.eyebrow{
+display:flex;
+align-items:center;
+gap:12px;
+font-size:12px;
+color:var(--olive);
+}
+
+.eyebrow:before{
+content:"";
+width:35px;
+height:1px;
+background:var(--gold);
+}
+
+.hero h1{
+font-size:clamp(50px,6vw,82px);
+font-weight:400;
+line-height:1.35;
+margin:30px 0 20px;
+letter-spacing:-3px;
+}
+
+.hero h1 em{
+font-family:Georgia,serif;
+font-weight:400;
+color:var(--olive);
+}
+
+.hero-description{
+max-width:490px;
+font-size:15px;
+line-height:2.2;
+color:var(--muted);
+font-weight:300;
+}
+
+.hero-buttons{
+display:flex;
+align-items:center;
+gap:30px;
+margin-top:35px;
+}
+
+.primary-btn{
+background:var(--dark);
+color:white;
+padding:16px 24px;
+font-size:13px;
+display:inline-flex;
+gap:25px;
+align-items:center;
+transition:.3s;
+}
+
+.primary-btn:hover{
+background:var(--olive);
+transform:translateY(-4px);
+}
+
+.secondary-btn{
+font-size:13px;
+color:var(--muted);
+}
+
+.hero-status{
+border-top:1px solid var(--line);
+margin-top:65px;
+padding-top:18px;
+display:flex;
+justify-content:space-between;
+font-size:10px;
+color:var(--muted);
+}
+
+.status-dot{
+display:inline-block;
+width:7px;
+height:7px;
+background:#929b70;
+border-radius:50%;
+margin-left:8px;
+}
+
+/* HERO ART */
+
+.hero-visual{
+height:490px;
+position:relative;
+background:linear-gradient(145deg,#dcd9cb,#b6b7a3);
+overflow:hidden;
+display:flex;
+align-items:center;
+justify-content:center;
+}
+
+.visual-sun{
+position:absolute;
+width:230px;
+height:230px;
+background:#c9ad7c;
+border-radius:50%;
+top:65px;
+left:50%;
+transform:translateX(-50%);
+}
+
+.visual-arch{
+position:absolute;
+width:275px;
+height:340px;
+background:#74795f;
+border-radius:150px 150px 0 0;
+bottom:0;
+left:50%;
+transform:translateX(-50%);
+}
+
+.visual-arch:before{
+content:"";
+position:absolute;
+inset:22px 22px 0;
+border:1px solid #e8e3d2;
+border-bottom:0;
+border-radius:130px 130px 0 0;
+}
+
+.visual-ring{
+position:absolute;
+width:390px;
+height:170px;
+border:1px solid #f5f2ec;
+border-radius:50%;
+transform:rotate(-35deg);
+}
+
+.visual-ring.two{
+transform:rotate(35deg);
+width:350px;
+border-color:#777b6088;
+}
+
+.visual-top{
+position:absolute;
+top:22px;
+left:22px;
+right:22px;
+display:flex;
+justify-content:space-between;
+direction:ltr;
+font:10px 'DM Sans';
+letter-spacing:2px;
+color:#646650;
+}
+
+.visual-bottom{
+position:absolute;
+bottom:25px;
+left:25px;
+right:25px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+color:white;
+}
+
+.visual-bottom span{
+font:10px 'DM Sans';
+letter-spacing:2px;
+}
+
+.visual-bottom strong{
+font-size:15px;
+font-weight:400;
+}
+
+/* INTRO */
+
+.intro{
+background:var(--surface);
+padding:42px 5%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+gap:25px;
+}
+
+.intro p{
+font-size:clamp(18px,2.3vw,25px);
+font-weight:300;
+line-height:1.9;
+}
+
+.intro strong{color:var(--olive)}
+
+.intro small{
+white-space:nowrap;
+color:var(--muted);
+font-size:11px;
+}
+
+/* SECTION HEADINGS */
+
+.section{
+padding:115px 0;
+}
+
+.section-heading{
+display:flex;
+align-items:center;
+gap:20px;
+}
+
+.section-heading span:first-child{
+font-size:12px;
+color:var(--olive);
+white-space:nowrap;
+}
+
+.section-line{
+height:1px;
+background:var(--line);
+flex:1;
+}
+
+.section-heading small{
+direction:ltr;
+font:10px 'DM Sans';
+letter-spacing:2px;
+color:#a09d91;
+white-space:nowrap;
+}
+
+/* ABOUT */
+
+.about-grid{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:100px;
+padding:75px 0 60px;
+}
+
+.about-title{
+font-size:clamp(40px,5vw,60px);
+font-weight:400;
+line-height:1.5;
+}
+
+.about-title em{
+font-family:Georgia;
+font-weight:400;
+color:var(--olive);
+}
+
+.about-text{
+font-size:15px;
+line-height:2.3;
+color:var(--muted);
+font-weight:300;
+}
+
+.about-link{
+display:inline-block;
+margin-top:25px;
+padding-bottom:10px;
+border-bottom:1px solid var(--gold);
+font-size:13px;
+}
+
+.values{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+border-top:1px solid var(--line);
+}
+
+.value{
+padding:28px 22px 0;
+border-left:1px solid var(--line);
+}
+
+.value:last-child{border-left:0}
+
+.value span{
+font:12px 'DM Sans';
+color:var(--gold);
+}
+
+.value h3{
+font-size:16px;
+font-weight:500;
+margin-top:17px;
+}
+
+.value p{
+font-size:12px;
+color:var(--muted);
+margin-top:8px;
+}
+
+/* PROJECTS */
+
+.projects-section{
+background:var(--surface);
+}
+
+.projects-intro{
+display:flex;
+justify-content:space-between;
+align-items:end;
+gap:30px;
+padding:65px 0 45px;
+}
+
+.projects-intro h2{
+font-size:clamp(38px,5vw,60px);
+font-weight:400;
+line-height:1.5;
+}
+
+.projects-intro h2 em{
+font-family:Georgia;
+color:var(--olive);
+font-weight:400;
+}
+
+.projects-intro p{
+max-width:330px;
+font-size:13px;
+line-height:2;
+color:var(--muted);
+}
+
+.projects-grid{
+display:grid;
+grid-template-columns:1.1fr 1fr 1fr;
+gap:25px;
+align-items:start;
+}
+
+.project:nth-child(3){margin-top:50px}
+
+.project-art{
+height:300px;
+position:relative;
+overflow:hidden;
+display:flex;
+align-items:center;
+justify-content:center;
+transition:.5s;
+}
+
+.project:hover .project-art{
+transform:translateY(-5px);
+}
+
+.art-one{
+background:linear-gradient(140deg,#b8bda5,#7c856e);
+}
+
+.art-two{
+background:linear-gradient(140deg,#c7b393,#716b57);
+}
+
+.art-three{
+background:linear-gradient(140deg,#c8c2b4,#898c78);
+}
+
+.project-art:before{
+content:"";
+position:absolute;
+width:200px;
+height:200px;
+border:1px solid #ffffff80;
+border-radius:50%;
+}
+
+.art-object{
+width:150px;
+height:200px;
+background:#e9e3d3;
+border-radius:90px 90px 5px 5px;
+position:relative;
+box-shadow:0 25px 50px #33333320;
+}
+
+.art-object:after{
+content:"";
+position:absolute;
+width:100px;
+height:100px;
+border-radius:50%;
+background:#bba477;
+top:35px;
+left:25px;
+}
+
+.art-two .art-object{
+width:175px;
+height:175px;
+border-radius:50%;
+background:#eee5d2;
+}
+
+.art-two .art-object:after{
+width:90px;
+height:90px;
+background:#7a795e;
+top:42px;
+left:42px;
+}
+
+.art-three .art-object{
+width:180px;
+height:150px;
+border-radius:4px;
+background:#eee9dd;
+}
+
+.art-three .art-object:after{
+width:125px;
+height:65px;
+border-radius:0;
+background:#a99a7e;
+top:43px;
+left:27px;
+}
+
+.art-label{
+position:absolute;
+bottom:20px;
+left:20px;
+font:10px 'DM Sans';
+letter-spacing:2px;
+color:white;
+direction:ltr;
+}
+
+.project-info{
+display:flex;
+justify-content:space-between;
+margin-top:22px;
+}
+
+.project-category{
+font-size:11px;
+color:var(--olive);
+}
+
+.project h3{
+font-size:19px;
+font-weight:500;
+margin-top:8px;
+}
+
+.project-number{
+font:12px 'DM Sans';
+color:#a29a89;
+}
+
+.project-description{
+font-size:12px;
+line-height:2;
+color:var(--muted);
+margin-top:13px;
+}
+
+.projects-note{
+margin-top:55px;
+border-top:1px solid #d4cec2;
+padding-top:20px;
+font-size:11px;
+color:var(--muted);
+}
+
+/* SERVICES */
+
+.services-grid{
+display:grid;
+grid-template-columns:.8fr 1fr;
+gap:100px;
+padding-top:70px;
+}
+
+.services-title{
+font-size:clamp(40px,5vw,60px);
+line-height:1.5;
+font-weight:400;
+}
+
+.services-title em{
+font-family:Georgia;
+color:var(--olive);
+font-weight:400;
+}
+
+.service-list{
+border-top:1px solid var(--line);
+}
+
+.service{
+display:grid;
+grid-template-columns:35px 1fr 20px;
+gap:15px;
+padding:25px 0;
+border-bottom:1px solid var(--line);
+}
+
+.service-number{
+font:12px 'DM Sans';
+color:var(--gold);
+}
+
+.service h3{
+font-size:16px;
+font-weight:500;
+}
+
+.service p{
+font-size:12px;
+color:var(--muted);
+margin-top:9px;
+line-height:1.9;
+}
+
+/* CONTACT */
+
+.contact{
+background:#252820;
+color:var(--bg);
+position:relative;
+overflow:hidden;
+}
+
+.contact-content{
+padding-top:100px;
+padding-bottom:35px;
+position:relative;
+z-index:2;
+}
+
+.contact-kicker{
+color:#c2ad80;
+font-size:12px;
+}
+
+.contact-overline{
+direction:ltr;
+font:11px 'DM Sans';
+letter-spacing:3px;
+color:#a9a795;
+margin-top:65px;
+}
+
+.contact h2{
+font-size:clamp(50px,7vw,85px);
+font-weight:400;
+line-height:1.4;
+margin-top:20px;
+}
+
+.contact h2 em{
+font-family:Georgia;
+font-weight:400;
+color:#c5ad7e;
+}
+
+.contact-description{
+font-size:14px;
+color:#b8b9ad;
+margin-top:20px;
+}
+
+.email-link{
+display:inline-block;
+direction:ltr;
+font:18px 'DM Sans';
+padding-bottom:13px;
+border-bottom:1px solid #b89b69;
+margin-top:30px;
+}
+
+.contact-circle{
+position:absolute;
+width:500px;
+height:500px;
+border:1px solid #ffffff18;
+border-radius:50%;
+left:-100px;
+top:100px;
+}
+
+.contact-circle:before,
+.contact-circle:after{
+content:"";
+position:absolute;
+inset:40px;
+border:1px solid #ffffff18;
+border-radius:50%;
+}
+
+.contact-circle:after{inset:90px}
+
+.footer{
+display:flex;
+justify-content:space-between;
+border-top:1px solid #ffffff30;
+padding-top:23px;
+margin-top:115px;
+font:10px 'DM Sans';
+letter-spacing:1px;
+color:#aaa99d;
+}
+
+.footer a{
+font-family:'IBM Plex Sans Arabic';
+font-size:11px;
+letter-spacing:0;
+}
+
+/* ANIMATION */
+
+.reveal{
+opacity:0;
+transform:translateY(25px);
+transition:opacity .8s ease,transform .8s ease;
+}
+
+.reveal.visible{
+opacity:1;
+transform:translateY(0);
+}
+
+@media(prefers-reduced-motion:reduce){
+html{scroll-behavior:auto}
+.reveal{opacity:1;transform:none;transition:none}
+}
+
+/* RESPONSIVE */
+
+@media(max-width:850px){
+
+.container{width:90%}
+
+.hero{
+grid-template-columns:1fr 1fr;
+gap:30px;
+}
+
+.hero-visual{height:400px}
+
+nav{gap:17px}
+
+nav a{font-size:12px}
+
+.projects-grid{gap:15px}
+
+.project-art{height:230px}
+
+.about-grid,.services-grid{gap:45px}
+
+}
+
+@media(max-width:650px){
+
+header{height:75px}
+
+.menu-btn{display:block}
+
+nav{
+display:none;
+position:absolute;
+top:75px;
+right:0;
+left:0;
+background:var(--bg);
+padding:20px;
+flex-direction:column;
+align-items:stretch;
+gap:0;
+border:1px solid var(--line);
+}
+
+nav.open{display:flex}
+
+nav a{
+padding:14px 0;
+border-bottom:1px solid var(--line);
+}
+
+nav .nav-contact{
+text-align:center;
+margin-top:15px;
+}
+
+.hero{
+display:flex;
+flex-direction:column;
+align-items:stretch;
+padding-top:60px;
+gap:40px;
+padding-bottom:80px;
+}
+
+.hero h1{
+font-size:55px;
+}
+
+.hero-description{font-size:14px}
+
+.hero-visual{
+height:390px;
+}
+
+.hero-status{margin-top:40px}
+
+.intro{
+display:block;
+padding:30px 5%;
+}
+
+.intro p{font-size:19px}
+
+.intro small{
+display:block;
+margin-top:15px;
+}
+
+.section{padding:80px 0}
+
+.section-heading{gap:10px}
+
+.section-heading small{font-size:8px}
+
+.about-grid{
+display:block;
+padding:45px 0;
+}
+
+.about-text{margin-top:25px}
+
+.values{grid-template-columns:1fr}
+
+.value{
+border-left:0;
+border-bottom:1px solid var(--line);
+padding:20px 0;
+}
+
+.value h3{margin-top:7px}
+
+.projects-intro{
+display:block;
+padding:45px 0 30px;
+}
+
+.projects-intro p{margin-top:15px}
+
+.projects-grid{grid-template-columns:1fr;gap:40px}
+
+.project:nth-child(3){margin-top:0}
+
+.project-art{height:290px}
+
+.services-grid{
+display:block;
+padding-top:45px;
+}
+
+.service-list{margin-top:35px}
+
+.contact-content{padding-top:75px}
+
+.contact h2{font-size:53px}
+
+.contact-overline{margin-top:50px}
+
+.footer{
+flex-wrap:wrap;
+gap:20px;
+margin-top:85px;
+}
+
+.contact-circle{
+width:320px;
+height:320px;
+left:-180px;
+}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<a href="#home" class="logo">
+<div class="logo-symbol">K<span>.</span></div>
+<div class="logo-text">KHADIJA <span>AHMED</span></div>
+</a>
+
+<button class="menu-btn" aria-label="فتح القائمة" aria-expanded="false">☰</button>
+
+<nav id="navigation">
+<a href="#home">الرئيسية</a>
+<a href="#about">من أنا</a>
+<a href="#projects">أعمالي</a>
+<a href="#services">خدماتي</a>
+<a href="#contact" class="nav-contact">تواصل معي ↗</a>
+</nav>
+</header>
+
+<main>
+
+<!-- HERO -->
+
+<section class="hero container" id="home">
+
+<div class="hero-content reveal">
+
+<div class="eyebrow">معرض أعمال إبداعي · 2026</div>
+
+<h1>
+أصنع تجارب<br>
+<em>تترك انطباعاً.</em>
+</h1>
+
+<p class="hero-description">
+أنا خديجة أحمد، أهتم بتحويل الأفكار إلى تجارب رقمية مميزة تجمع بين جمال التصميم وسهولة الاستخدام والاهتمام بالتفاصيل.
+</p>
+
+<div class="hero-buttons">
+<a href="#projects" class="primary-btn">اكتشف أعمالي <span>↙</span></a>
+<a href="#about" class="secondary-btn">تعرّف عليّ ←</a>
+</div>
+
+<div class="hero-status">
+<span><i class="status-dot"></i> الإبداع يبدأ من فكرة</span>
+<span>01 / 04</span>
+</div>
+
+</div>
+
+<div class="hero-visual reveal">
+<div class="visual-top">
+<span>CREATIVE PORTFOLIO</span>
+<span>KA — 2026</span>
+</div>
+<div class="visual-sun"></div>
+<div class="visual-ring"></div>
+<div class="visual-ring two"></div>
+<div class="visual-arch"></div>
+<div class="visual-bottom">
+<span>DESIGN WITH INTENTION</span>
+<strong>خديجة أحمد</strong>
+</div>
+</div>
+
+</section>
+
+<!-- INTRO -->
+
+<div class="intro">
+<p>التصميم الجيد لا يلفت الانتباه فقط، بل يجعل كل شيء <strong>أوضح وأسهل وأجمل.</strong></p>
+<small>فكرة · إبداع · تجربة</small>
+</div>
+
+<!-- ABOUT -->
+
+<section class="section container" id="about">
+
+<div class="section-heading">
+<span>01 — نبذة عني</span>
+<div class="section-line"></div>
+<small>ABOUT ME</small>
+</div>
+
+<div class="about-grid">
+
+<h2 class="about-title reveal">
+التفاصيل الصغيرة<br>
+تصنع <em>فرقاً كبيراً.</em>
+</h2>
+
+<div class="about-text reveal">
+<p>
+أؤمن أن التصميم الناجح يبدأ بفهم الفكرة وينتهي بتجربة تترك أثراً جميلاً. أهتم بتناسق الألوان، وترتيب المحتوى، وسهولة التصفح، لأقدم أعمالاً تجمع بين الجمال والوظيفة.
+</p>
+<a href="#contact" class="about-link">يسعدني أن أسمع عن فكرتك ←</a>
+</div>
+
+</div>
+
+<div class="values reveal">
+
+<div class="value">
+<span>01</span>
+<h3>وضوح الفكرة</h3>
+<p>رسالة بسيطة تصل من أول نظرة.</p>
+</div>
+
+<div class="value">
+<span>02</span>
+<h3>أناقة التفاصيل</h3>
+<p>توازن بصري ومساحات مدروسة.</p>
+</div>
+
+<div class="value">
+<span>03</span>
+<h3>سهولة الاستخدام</h3>
+<p>تجربة مريحة على جميع الشاشات.</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- PROJECTS -->
+
+<section class="section projects-section" id="projects">
+
+<div class="container">
+
+<div class="section-heading">
+<span>02 — أعمال مختارة</span>
+<div class="section-line"></div>
+<small>SELECTED WORKS</small>
+</div>
+
+<div class="projects-intro">
+<h2>
+أفكار أصبحت<br>
+<em>تجارب ملموسة.</em>
+</h2>
+
+<p>
+مجموعة من النماذج والمشاريع الرقمية التي تعكس اهتمامي بالتصميم الإبداعي والواجهات العصرية والتفاصيل الدقيقة.
+</p>
+</div>
+
+<div class="projects-grid">
+
+<article class="project reveal">
+
+<div class="project-art art-one">
+<div class="art-object"></div>
+<span class="art-label">PERSONAL IDENTITY</span>
+</div>
+
+<div class="project-info">
+<div>
+<span class="project-category">موقع شخصي · واجهة تعريفية</span>
+<h3>الحضور المهني</h3>
+</div>
+<span class="project-number">01</span>
+</div>
+
+<p class="project-description">
+تصميم موقع شخصي يعرض المعلومات والمهارات والهوية بأسلوب أنيق ومنظم.
+</p>
+
+</article>
+
+<article class="project reveal">
+
+<div class="project-art art-two">
+<div class="art-object"></div>
+<span class="art-label">COFFEE EXPERIENCE</span>
+</div>
+
+<div class="project-info">
+<div>
+<span class="project-category">موقع تجاري · مقهى</span>
+<h3>عالم القهوة</h3>
+</div>
+<span class="project-number">02</span>
+</div>
+
+<p class="project-description">
+واجهة لمقهى تجمع بين الأجواء الدافئة وعرض المنتجات والخدمات بطريقة جذابة.
+</p>
+
+</article>
+
+<article class="project reveal">
+
+<div class="project-art art-three">
+<div class="art-object"></div>
+<span class="art-label">DIGITAL CONCEPT</span>
+</div>
+
+<div class="project-info">
+<div>
+<span class="project-category">تصميم إبداعي · تجربة رقمية</span>
+<h3>بساطة عصرية</h3>
+</div>
+<span class="project-number">03</span>
+</div>
+
+<p class="project-description">
+نموذج تصميم تجريبي يعرض تصوراً لواجهة رقمية عصرية قابلة للتطوير والتخصيص.
+</p>
+
+</article>
+
+</div>
+
+<div class="projects-note">
+✳ المشاريع المعروضة نماذج تعريفية، ويمكن تحديث وصفها لتطابق الأعمال الفعلية.
+</div>
+
+</div>
+</section>
+
+<!-- SERVICES -->
+
+<section class="section container" id="services">
+
+<div class="section-heading">
+<span>03 — المهارات والخدمات</span>
+<div class="section-line"></div>
+<small>WHAT I DO</small>
+</div>
+
+<div class="services-grid">
+
+<h2 class="services-title reveal">
+من الفكرة<br>
+إلى <em>واجهة متكاملة.</em>
+</h2>
+
+<div class="service-list reveal">
+
+<div class="service">
+<span class="service-number">01</span>
+<div>
+<h3>تصميم المواقع التعريفية</h3>
+<p>تصميم صفحات شخصية وتجارية بأسلوب عصري واحترافي.</p>
+</div>
+<span>↗</span>
+</div>
+
+<div class="service">
+<span class="service-number">02</span>
+<div>
+<h3>تنسيق الهوية الرقمية</h3>
+<p>اختيار الألوان والخطوط والعناصر البصرية المتناسقة.</p>
+</div>
+<span>↗</span>
+</div>
+
+<div class="service">
+<span class="service-number">03</span>
+<div>
+<h3>تصميم واجهات متجاوبة</h3>
+<p>تجارب مرنة تعمل على الهاتف والكمبيوتر والأجهزة اللوحية.</p>
+</div>
+<span>↗</span>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- CONTACT -->
+
+<section class="contact" id="contact">
+
+<div class="contact-circle"></div>
+
+<div class="container contact-content">
+
+<span class="contact-kicker">04 — لنتواصل</span>
+
+<p class="contact-overline">HAVE A GOOD IDEA?</p>
+
+<h2>
+لنصنع شيئاً<br>
+<em>يستحق أن يُرى.</em>
+</h2>
+
+<p class="contact-description">
+هل لديك فكرة أو مشروع؟ يسعدني أن نبدأ الحديث.
+</p>
+
+<a href="tel:+966504789844" class="email-link">
++966504789844 ↗
+</a>
+
+<div class="footer">
+<span>KHADIJA AHMED © <span id="year">2026</span></span>
+<a href="#home">العودة إلى الأعلى ↑</a>
+<span>MADE WITH CARE</span>
+</div>
+
+</div>
+</section>
+
+</main>
+
+<script>
+// القائمة المتجاوبة
+const menuButton = document.querySelector('.menu-btn');
+const navigation = document.querySelector('#navigation');
+
+menuButton.addEventListener('click', () => {
+const isOpen = navigation.classList.toggle('open');
+menuButton.setAttribute('aria-expanded', isOpen);
+menuButton.textContent = isOpen ? '✕' : '☰';
+});
+
+navigation.querySelectorAll('a').forEach(link => {
+link.addEventListener('click', () => {
+navigation.classList.remove('open');
+menuButton.setAttribute('aria-expanded', 'false');
+menuButton.textContent = '☰';
+});
+});
+
+// ظهور العناصر أثناء التمرير
+const observer = new IntersectionObserver((entries) => {
+entries.forEach(entry => {
+if(entry.isIntersecting){
+entry.target.classList.add('visible');
+observer.unobserve(entry.target);
+}
+});
+},{threshold:0.12});
+
+document.querySelectorAll('.reveal').forEach(element => {
+observer.observe(element);
+});
+
+// السنة الحالية
+document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
